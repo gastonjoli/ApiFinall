@@ -14,7 +14,11 @@ public class VotoService {
     private com.InfoApiFinal.ApiFinal.Repository.VotoRepository votoRepository;
 
     @Transactional
-    public Voto crearVoto(Voto voto){return (Voto) com.InfoApiFinal.ApiFinal.Repository.VotoRepository.save(voto);}
+    public Voto crearVoto(Voto voto){return votoRepository.save(voto);}
+
+    @Transactional
+    public List<Voto> allVotos(){return votoRepository.findAll();}
+
 
     @Transactional
     public List<Voto> buscarVotoPorUsuario(String username){
