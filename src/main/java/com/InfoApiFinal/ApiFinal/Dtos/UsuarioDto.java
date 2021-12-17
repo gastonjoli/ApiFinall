@@ -1,7 +1,5 @@
 package com.InfoApiFinal.ApiFinal.Dtos;
 
-
-
 import com.InfoApiFinal.ApiFinal.Entities.Usuario;
 import com.InfoApiFinal.ApiFinal.Listas.TipoUsuario;
 import com.fasterxml.jackson.annotation.JsonFormat;
